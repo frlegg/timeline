@@ -12,10 +12,11 @@
 * {
     font-family: 'Montserrat';
     user-select: none;
+    font-size: 24px;
 }
 
 body {
-    background-color: #000;
+    background-color: rgb(84, 20, 20);
     margin: 0;
     padding: 0;
     overflow-y: hidden;
@@ -24,12 +25,30 @@ body {
     font-style: normal
 }
 
+.dot {
+    height: 13px;
+    width: 13px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.black {
+    background-color: #070707;
+}
+
 img,
 img a {
     border: none
 }
 
 .essay {
+    position: absolute;
+    font-size: .9em;
+    color: #cdcdcd
+}
+
+.event {
     position: absolute;
     font-size: .9em;
     color: #cdcdcd
@@ -88,7 +107,7 @@ img a {
 }
 
 #counter {
-    font-size: 13px;
+    font-size: 18px;
     display: inline;
     cursor: pointer
 }
@@ -104,7 +123,7 @@ img a {
 
 #unitselect {
     position: relative;
-    top: -155px;
+    top: -230px;
     display: none
 }
 
@@ -122,7 +141,7 @@ img a {
 #unitselect li a,
 #langselect li a,
 .nav li a {
-    font-size: 13px;
+    font-size: 18px;
     padding: 6px 4px;
     list-style-type: none;
     color: #aaa;
@@ -170,11 +189,11 @@ img a {
 
 .nav {
     position: fixed;
-    width: 620px;
+    width: 730px;
     height: 100px;
     top: 0;
     left: 50%;
-    margin-left: -340px
+    transform: translateX(-50%);
 }
 
 .nav li {
@@ -290,7 +309,8 @@ img a {
     position: relative;
     height: 80vh;
     width: 100vh;
-    z-index: 4
+    z-index: 4;
+    background: rgb(84, 20, 20);
 }
 
 #titlecard img {
@@ -314,16 +334,16 @@ img a {
 .scalewrap img {
     position: absolute;
     top: 50vh;
-    margin-top: -250px;
-    height: 500px;
-    width: 500px
+    margin-top: -40vh;
+    height: 80vh;
+    width: 80vw
 }
 
 #navblocker {
     position: absolute;
-    background-color: #000;
+    background-color: rgb(84, 20, 20);
     height: 99%;
-    width: 2000px;
+    width: calc(200vw + 200px);
     margin-left: 200px;
     z-index: 1
 }
@@ -335,8 +355,8 @@ img a {
 
 #bigspace {
     position: absolute;
-    left: 2400px;
-    background-color: #000;
+    left: calc(200vw + 600px);
+    background-color: rgb(84, 20, 20);
     background-image: url(img/ticks2.svg);
     background-repeat: repeat-x;
     background-position: left bottom;

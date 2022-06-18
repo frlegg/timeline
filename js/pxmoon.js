@@ -48,8 +48,8 @@ $(function() {
     $('.essay').each(function() {
         essayMarks.push($(this).offset().left - 200)
     });
-    // var planetMarks = [$('#suntxt').offset().left - 200, $('#merctxt').offset().left - 200, $('#venustxt').offset().left - 200, $('#earthtxt').offset().left - 200, $('#marstxt').offset().left - 200, $('#jupitertxt').offset().left - 200, $('#saturntxt').offset().left - 200, $('#neptunetxt').offset().left - 200, $('#uranustxt').offset().left - 200, $('#plutotxt').offset().left - 200, ];
-    var destinations = $.makeArray(essayMarks) /*.concat($.makeArray(planetMarks))*/ ;
+    var eventMarks = [$('#cretaceous-paleogene').offset().left - 200, $('#triassic-jurassic').offset().left - 200, $("#permian-triassic").offset().left - 200, $("#late-devonian").offset().left - 200, $("#ordovician-silurian").offset().left - 200, $("#moon-creation").offset().left - 200];
+    var destinations = $.makeArray(essayMarks).concat($.makeArray(eventMarks));
     destinations.sort(function(a, b) {
         return a - b
     });
