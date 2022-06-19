@@ -1,5 +1,5 @@
 # Timeline
-The earth's timeline on the template of Josh Worth's scale model of the solar system. Hosted at frlegg.github.io/timeline
+The earth's timeline on the template of Josh Worth's scale model of the solar system. Hosted [here](frlegg.github.io/timeline)
 
 Nothing in this is 100% to scale. This is for a couple of reasons:
 1. When 1 pixel is 1221 years, and its very easy tomiss by > 10 pixels, then there is a substansial error margin
