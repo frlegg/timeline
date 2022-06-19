@@ -48,7 +48,7 @@ $(function() {
     $('.essay').each(function() {
         essayMarks.push($(this).offset().left - 200)
     });
-    var eventMarks = [$('#cretaceous-paleogene').offset().left - 200, $('#triassic-jurassic').offset().left - 200, $("#permian-triassic").offset().left - 200, $("#late-devonian").offset().left - 200, $("#ordovician-silurian").offset().left - 200, $("#moon-creation").offset().left - 200];
+    var eventMarks = [$('#cretaceous-paleogene').offset().left - 200, $('#triassic-jurassic').offset().left - 200, $("#permian-triassic").offset().left - 200, $("#late-devonian").offset().left - 200, $("#ordovician-silurian").offset().left - 200, $("#moon-creation").offset().left - 200, $("#great-oxidization").offset().left - 200, $("#photosynthesis").offset().left - 200, $("#cambrian").offset().left - 200, $("#devonian").offset().left - 200, $('#huronean').offset().left - 200, $('#cyrogenian').offset().left - 200, $("#andean-saharan").offset().left - 200, $("#late-paleozoic").offset().left - 200, $("#quaternary").offset().left - 200];
     var destinations = $.makeArray(essayMarks).concat($.makeArray(eventMarks));
     destinations.sort(function(a, b) {
         return a - b
